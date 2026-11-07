@@ -1,0 +1,593 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    justify-self: center;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #172554;
+    z-index: 1000;
+
+    span{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 25px;
+        color: white;
+    }
+    
+
+
+    ul{
+        list-style-type: none;
+    }
+
+    li{
+        float: left;
+        margin: 0px 10px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+
+        &:hover{
+            transform: scale(1.1);
+            background-color: rgb(63, 63, 151);
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+/* HOME */
+
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100dvh;
+    padding: 0px 100px;
+    background-color: #0b1120;
+
+    .home-tab1{
+        margin: 0px 50px;
+        
+        h1{
+            color: white;
+            font-size: 35px;
+        }
+
+        h2{
+            font-size:50px;
+            font-weight: 700;
+            margin: 5px 0px;
+            color: white;
+        }
+       
+
+        p{
+            color: white;
+            margin: 10px 0px;
+            font-size: 25px;
+        }
+
+        button{
+            width: 170px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            margin-right: 10px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+            background-color: #2563eb;
+            color: white;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+    }
+
+    .home-tab2{
+
+            
+        img{
+            width: 400px;
+            border-radius: 50px;
+            margin: 0px 50px;
+            border: 2px solid white;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+/* ABOUT */
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100dvh;
+    background-color: #0b1120;
+
+    img{
+        width: 400px;
+        border-radius: 20px;
+        margin: 50px;
+        border: 2px solid white;
+    }
+
+    h1{
+        color: white;
+        margin-bottom: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p{
+    width: 500px;
+    text-align: start;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    }
+}
+
+
+
+
+
+
+
+/* ACHIEVEMENTS */
+.achievements{
+    height: 100dvh;
+    padding-top: 80px;
+    color: white;
+    background-color: #0b1120;
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+.ach-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80dvh;
+}
+
+.ach-tab1{
+    text-align: center; 
+
+    img{
+        width: 400px;
+        height: 280px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+}
+
+.ach-tab2{
+    text-align: center;
+
+    img{
+        width: 400px;
+        margin-bottom: 30px;
+        border-radius: 20px; 
+    }
+
+    h3{
+        font-size: 40px;
+    }
+}
+
+.ach-tab3{
+    text-align: center;
+
+    img{
+        width: 400px;
+        margin-bottom: 30px;
+        height: 280px;
+        border-radius: 20px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+/* SKILLS */
+.skills{
+    height: 100dvh;
+    padding-top: 80px;
+    color: white;
+    background-color: #0b1120;
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+.skil-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80dvh;
+}
+
+.skil-tab1{
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.575);
+    transition: transform 0.3s ease;
+    border: 2px solid white;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+    
+
+    img{
+        margin-bottom: 20px;
+        width: 290px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+
+    h2{
+        filter: drop-shadow(0px 0px 10px black);
+        font-size: 30px;
+    }
+}
+
+.skil-tab2{
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.575);
+    transition: transform 0.3s ease;
+    border: 2px solid white;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+    img{
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+}
+
+.skil-tab3{
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.575);
+    transition: transform 0.3s ease;
+    border: 2px solid white;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+    img{
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+
+    h2{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+/* PROJECT */
+.project{
+    padding-top: 80px;
+    height: 100dvh;
+    background-color: #0b1120;
+    color: white;
+
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+}
+
+.pro-tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80dvh;
+    padding: 0px 30px;
+}
+
+.pro-tab1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 420px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.591);
+    padding: 0px 30px;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+
+    img{
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+        border-radius: 15px;
+    }
+
+    .pro-tab11{
+        text-align: start;
+
+        h2{
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+.pro-tab2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 420px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.58);
+    padding: 0px 30px;
+    transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+
+    img{
+        width: 200px;
+        height: 200px;
+        margin-right: 20px; 
+        border-radius: 15px;
+    }
+
+    .pro-tab21{
+        text-align: start;
+
+        h2{
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* CONTACT */
+.contact{
+    height: 100dvh;
+    padding-top: 80px;
+    background-color: #0b1120;
+    color: white;
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+}
+
+.con-tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80dvh;
+    padding: 0px 100px
+}
+
+.con-tab1{
+
+    h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    input{
+        width: 450px;
+        text-indent: 10px;
+        font-size: 18px;
+        outline: none;
+        height: 50px;
+        margin: 10px 0px;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.525);
+        transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.03);
+            }
+    }
+
+    textarea{
+        width: 450px;
+        height: 100px;
+        resize: none;
+        margin-top: 10px;
+        text-indent: 10px;
+        padding-top: 10px;
+        font-size: 18px;
+        outline: none;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.525);
+        transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.03);
+            }
+    }
+
+    button{
+        padding: 10px 40px;
+        margin-top: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-self: end;
+        background-color: rgba(227, 223, 223, 0.525);
+        border: none;
+        color: white;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+    }
+}
+
+.con-tab2{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    p{
+        font-size: 25px;
+        margin: 20px 0px;
+    }
+}
+
+.con-tab21{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 50px;
+   
+    
+    img{
+        width: 70px;
+        border-radius: 50%;
+         transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.08);
+                box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.432)
+            }
+    }
+
+    .i1{
+        border-radius: 15px;
+    }
+}
+
+
+footer{
+    text-align: center;
+    margin-top: -40px;
+    background-color: rgba(128, 128, 128, 0.47);
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    color: white;
+}
